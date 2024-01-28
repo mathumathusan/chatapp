@@ -1,0 +1,50 @@
+.messageContainer{
+    margin: 30px;
+}
+
+.messageTop{
+display: flex;
+align-items: center;
+gap: 15px;
+}
+
+.messageCenter{
+ width: 800px;
+ font-size: 18px;
+ margin-top: 20px;
+ margin-left: 80px;
+}
+
+.messageBottom{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+.upvote{
+margin-right: 20px;
+margin-left: 8px;
+}
+
+.msgImg{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.msgText{
+  font-size: 18px;
+  font-weight: bold;
+}
+.msgTime{
+color: gray;
+}
+
+.messageTops{
+    margin-top: 20px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    gap:15px;
+}

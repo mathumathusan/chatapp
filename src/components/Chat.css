@@ -1,0 +1,47 @@
+.container{
+    margin: 30px;
+}
+
+.inputitems{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:20px;
+}
+
+.inputImage{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.input{
+ width: 80%;
+ height: 50px;
+ font-size: 18px;
+ border: 1px solid gray;
+ outline: none;
+ color:gray ;
+padding-left: 20px;
+}
+
+.inputButton{
+    background-color: rgb(111, 47, 239);
+    color: white;
+    font-size: 16px;
+    height: 50px;
+    width: 150px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.inputButton:hover{
+    background-color: rgb(127, 75, 233);
+}
+
+.bottomline{
+    margin-top: 40px;
+    color: gray;
+}
