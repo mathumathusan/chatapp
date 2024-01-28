@@ -1,16 +1,26 @@
 import React, { useEffect, useState } from 'react'
 import "./Chat.css"
 import Message from './Message'
+import axios from 'axios'
 
 function Chat() {
 
     const [ text,setText]=useState("")
-    const [data,setdata]=useState([])
+    const [result,setRes]=useState([])
 
-    const handleSubmit =(e)=>{
+    const handleSubmit =async (e)=>{
          e.preventDefault()
          const time = new Date().toLocaleTimeString()
-         setdata(prev=>[...prev,text,time])
+         try {
+
+          const res =  await  axios.post("http://localhost:8080/createChat",{name:text})
+          // console.log(res.data)
+           setRes(res.data)
+          
+         } catch (error) {
+           console.error(error)
+         }
+       
     }
 
   return (
@@ -25,7 +35,7 @@ function Chat() {
         </div>
         <hr className='bottomline' />
     </div>
-    <Message data={data}/>
+    <Message result={result}/>
     </>
    
   )
