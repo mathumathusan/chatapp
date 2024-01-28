@@ -82,7 +82,7 @@ const [data,setdata]=useState([])
         alt=""
       />
       <span className="msgText">vijay</span>
-      <span className="msgTime">. {item.timestamp}</span>
+      <span className="msgTime">.  {item.timestamp && new Date(item.timestamp).toLocaleTimeString()}</span>
     </div>
     <div className="messageCenter">
     {item.name}
